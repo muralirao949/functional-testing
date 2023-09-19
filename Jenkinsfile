@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('pullscm') {
       steps {
-        git branch: 'main', credentialsId: 'github', url: 'git@github.com:muralirao949/functional-testing.git'
+        git branch: 'main', credentialsId: 'git', url: 'git@github.com:muralirao949/functional-testing.git'
       }
     }
     stage('execute test') {
